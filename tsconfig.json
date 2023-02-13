@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "resolveJsonModule": true,
+        "moduleResolution": "NodeNext",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "outDir": "build",
+        "target": "ESNext",
+        "lib": ["ESNext"],
+        "module": "NodeNext"
+    },
+    "include": [
+        "./**/*.ts",
+    ],
+}

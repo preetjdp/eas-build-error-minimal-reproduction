@@ -1,0 +1,27 @@
+{
+  "name": "eas-build-error",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-json-modules --loader ts-node/esm ./index.js",
+    "start:inspect": "node --inspect -r ts-node/register src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "lint:fix": "eslint ./**/*.ts --quiet --fix "
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "5.27.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "prettier": "2.6.2",
+    "ts-node": "10.8.1",
+    "typescript": "4.7.3"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ethereum-attestation-service/eas-sdk": "0.25.8"
+  }
+}
